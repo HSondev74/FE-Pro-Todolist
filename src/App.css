@@ -146,6 +146,7 @@ body {
   font-size: 1.5rem;
   width: 3rem;
   margin-right: 0.8rem;
+  position: relative;
 }
 
 .user-settings-btn:last-of-type {
@@ -320,7 +321,45 @@ body {
 .add-list-btn::after {
   content: '...';
 }
-
+.notify-bell {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  opacity: 0.8;
+  border-radius: 50%;
+  font-weight: 600;
+  background-color: red;
+}
+.list-notify {
+  left: -120px;
+  top: 40px;
+  position: absolute;
+  width: 200px;
+  z-index: 9999;
+  background-color: #fff;
+  height: 300px;
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+.list-notify li{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  color: #090303;
+  line-height: 18px;
+}
+.list-notify p {
+  color: #a9a4a4;
+  margin-top: 5px;
+}
+.list-notify strong {
+  color: black; 
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 /*
 
 The following rule will only run if your browser supports CSS grid.
